@@ -2,7 +2,7 @@
 create table users
 (
     id         bigint       not null
-        primary key,
+        primary key auto_increment,
     email      varchar(255) null,
     first_name varchar(255) null,
     last_name  varchar(255) null,
@@ -40,3 +40,4 @@ INSERT INTO roles VALUES (2, 'user');
 INSERT INTO users_roles VALUES (1, 1);
 INSERT INTO users_roles VALUES (1, 2);
 INSERT INTO users_roles VALUES (2, 2);
+
